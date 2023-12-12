@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
     @Spy
-    private Feline feline = new Feline();
+    private Feline feline;
 
     @Test
     public void getFamilyReturnsFelineValue() {
