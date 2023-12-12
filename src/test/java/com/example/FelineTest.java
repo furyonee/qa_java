@@ -14,21 +14,25 @@ public class FelineTest {
 
     @Test
     public void getFamilyReturnsFelineValue() {
+        feline.getFamily();
         assertEquals("Кошачьи", feline.getFamily());
     }
 
     @Test
     public void getKittensWithParametersShouldReturnAppropriateValue() {
+        feline.getKittens(2);
         assertEquals(2, feline.getKittens(2));
     }
 
     @Test
     public void getKittensWithNoParametersShouldReturnOne() {
+        feline.getKittens();
         assertEquals(1, feline.getKittens());
     }
 
     @Test
     public void doesHaveMane() {
+        feline.doesHaveMane();
         assertEquals(false, feline.doesHaveMane());
     }
 }
